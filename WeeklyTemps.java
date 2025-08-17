@@ -40,8 +40,3 @@ public class WeeklyTemps {
         scanner.close();
     }
 }
-    
-         
-        
-
-        
