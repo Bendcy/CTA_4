@@ -4,17 +4,23 @@ import java.util.Scanner;
 public class WeeklyTemps {
     public static void main(String[] args) {
 
+        // Initialize lists to store days and temperatures
         ArrayList<String> daysOfWeek = new ArrayList<>();
         ArrayList<Double> dailyTemps = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         
+        // Collect temperature data for each day of the week
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
+        // Loop to get temperatures for each day
         for (String day : days) {
             System.out.println("Enter the temperature for " + day + ": ");
             double temp = scanner.nextDouble();
             daysOfWeek.add(day);
             dailyTemps.add(temp);
         }
+
+        // Interactive loop for user queries
         while (true) {
             System.out.println("\nEnter a day of the week to display its temperature, 'week' for weekly average, or 'exit' to quit: ");
             String userInput = scanner.next();
